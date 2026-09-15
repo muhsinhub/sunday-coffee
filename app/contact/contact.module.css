@@ -1,0 +1,90 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.sub { color: var(--color-text-light); }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--color-bg-alt);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.hours { display: flex; flex-direction: column; gap: 0.4rem; }
+.hours div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+}
+.hours span:last-child { font-weight: 600; color: var(--color-text); }
+
+.mapWrap { position: sticky; top: 100px; }
+
+.map {
+  aspect-ratio: 4/3;
+  background: var(--color-bg-alt);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding: 2rem;
+  color: var(--color-text-light);
+}
+
+.map span { font-size: 3rem; }
+.map p { font-weight: 600; color: var(--color-text); }
+.mapHint { font-size: 0.8rem !important; font-weight: 400 !important; color: var(--color-text-light) !important; }
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .mapWrap { position: static; }
+}
