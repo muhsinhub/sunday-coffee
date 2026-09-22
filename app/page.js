@@ -36,10 +36,12 @@ export default function Home() {
             </div>
 
             <div className={styles.heroImageWrap}>
-              <div className={styles.heroImage}>
-                <span>☕</span>
-                <p>Add a bright café photo here</p>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className={styles.heroPhoto}
+                src="/images/hero.jpg"
+                alt="Latte art coffees shared over a café table"
+              />
             </div>
           </div>
         </div>
